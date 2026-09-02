@@ -10,17 +10,7 @@ Currently, two official plugins are available:
 
 
 
-mora jou header.jsx file achhi sethire alga gote page re login karibaku padibaa 
-
-recent mora login page aunthentic login maguchhi ..
-
-but mora darkar j kebala mo application pain gote email aou password darkar hau ... 
-
-aou se email aou password dele se email ku otp daba thn otp dele login nua password pain kahi haba 
-
-abe joulogin hauchhi semiti login darkar nain .. 
-
-bass login pain email aou password darkar / aou kebala ehi application pain gote password darkar na ki propper email ra password darkar 
+THIS IS NOT COMPLETE !
 
 
 
