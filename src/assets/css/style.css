@@ -123,6 +123,199 @@ body {
 }
 
 /*header section*/
+.main_header_navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #f9ece6;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  padding: 12px 0;
+  width: 100%;
+}
+
+.header_single_line {
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+  width: 100% !important;
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.header_left_corner {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.header_left_corner .navbar-nav {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 12px;
+}
+
+.header_left_corner .nav-link {
+  padding: 8px 18px;
+  color: #514f4f;
+  font-weight: 600;
+  font-size: 15px;
+  text-transform: uppercase;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.header_left_corner .nav-item.active .nav-link,
+.header_left_corner .nav-link:hover {
+  background-color: #ffffff;
+  color: #f16179;
+}
+
+.header_center_brand {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.header_center_brand .navbar-brand {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.header_center_brand .navbar-brand span {
+  font-size: 30px;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  transition: color 0.3s ease;
+}
+
+.header_center_brand .navbar-brand:hover span {
+  color: #f16179;
+}
+
+.header_right_corner {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.header_right_corner .user_option {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+  gap: 16px;
+}
+
+.header_right_corner .nav_btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #000000;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.header_right_corner .nav_btn:hover {
+  color: #f16179;
+}
+
+.header_right_corner .nav_btn span {
+  margin-left: 6px;
+  text-transform: uppercase;
+}
+
+.header_right_corner .cart_nav_btn {
+  position: relative;
+  font-size: 20px;
+  padding: 6px 10px;
+}
+
+.header_right_corner .cart_nav_btn .cart-badge {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background-color: #f16179;
+  color: #ffffff;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+  font-weight: bold;
+}
+
+.header_right_corner .user_profile_box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header_right_corner .user_name_text {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.header_right_corner .logout_nav_btn {
+  background-color: #f16179;
+  color: #ffffff;
+  border: 1px solid #f16179;
+  padding: 5px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.header_right_corner .logout_nav_btn:hover {
+  background-color: transparent;
+  color: #f16179;
+}
+
+@media (max-width: 600px) {
+  .header_left_corner .nav-link {
+    padding: 5px 8px;
+    font-size: 13px;
+  }
+  .header_center_brand .navbar-brand span {
+    font-size: 22px;
+    letter-spacing: 0.5px;
+  }
+  .header_right_corner .user_option {
+    gap: 8px;
+  }
+  .header_right_corner .nav_btn {
+    padding: 4px 6px;
+    font-size: 13px;
+  }
+  .header_right_corner .user_name_text {
+    display: none;
+  }
+}
+
 .hero_area {
   padding: 0 45px;
 }
@@ -461,18 +654,23 @@ a:focus {
   margin-top: 45px;
 }
 
-.shop_section .btn-box a {
+.shop_section .btn-box a,
+.shop_section .btn-box button {
   display: inline-block;
   padding: 10px 40px;
   background-color: #f16179;
   color: #ffffff;
   border: 1px solid #f16179;
   border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  outline: none;
   -webkit-transition: all .3s;
   transition: all .3s;
 }
 
-.shop_section .btn-box a:hover {
+.shop_section .btn-box a:hover,
+.shop_section .btn-box button:hover {
   background-color: transparent;
   color: #f16179;
 }
